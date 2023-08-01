@@ -7,18 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD8A1F222A79907E008C50D2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A1F212A79907E008C50D2 /* SignUpView.swift */; };
 		BD9415102A795E4C00EE1BBF /* CommunicoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94150F2A795E4C00EE1BBF /* CommunicoApp.swift */; };
 		BD9415122A795E4C00EE1BBF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD9415112A795E4C00EE1BBF /* ContentView.swift */; };
 		BD9415142A795E4D00EE1BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9415132A795E4D00EE1BBF /* Assets.xcassets */; };
 		BD9415172A795E4D00EE1BBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9415162A795E4D00EE1BBF /* Preview Assets.xcassets */; };
+		BD94151E2A7963A300EE1BBF /* Comfortaa in Resources */ = {isa = PBXBuildFile; fileRef = BD94151D2A7963A300EE1BBF /* Comfortaa */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BD8A1F212A79907E008C50D2 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BD94150C2A795E4C00EE1BBF /* Communico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Communico.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD94150F2A795E4C00EE1BBF /* CommunicoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunicoApp.swift; sourceTree = "<group>"; };
 		BD9415112A795E4C00EE1BBF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BD9415132A795E4D00EE1BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD9415162A795E4D00EE1BBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BD94151D2A7963A300EE1BBF /* Comfortaa */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Comfortaa; path = ../../../Downloads/Comfortaa; sourceTree = "<group>"; };
+		BD94151F2A798E1100EE1BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +56,11 @@
 		BD94150E2A795E4C00EE1BBF /* Communico */ = {
 			isa = PBXGroup;
 			children = (
+				BD94151F2A798E1100EE1BBF /* Info.plist */,
 				BD94150F2A795E4C00EE1BBF /* CommunicoApp.swift */,
 				BD9415112A795E4C00EE1BBF /* ContentView.swift */,
+				BD8A1F212A79907E008C50D2 /* SignUpView.swift */,
+				BD94151D2A7963A300EE1BBF /* Comfortaa */,
 				BD9415132A795E4D00EE1BBF /* Assets.xcassets */,
 				BD9415152A795E4D00EE1BBF /* Preview Content */,
 			);
@@ -126,6 +134,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9415172A795E4D00EE1BBF /* Preview Assets.xcassets in Resources */,
+				BD94151E2A7963A300EE1BBF /* Comfortaa in Resources */,
 				BD9415142A795E4D00EE1BBF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +147,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9415122A795E4C00EE1BBF /* ContentView.swift in Sources */,
+				BD8A1F222A79907E008C50D2 /* SignUpView.swift in Sources */,
 				BD9415102A795E4C00EE1BBF /* CommunicoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +279,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Communico/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Communico/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +308,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Communico/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Communico/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
