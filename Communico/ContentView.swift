@@ -18,18 +18,12 @@ struct ContentView: View {
                 Text("Communico")
                 
                 Text("Login or Sign Up now")
-                TextField("Enter Username", text: $username)
-                TextField("Enter Password", text: $password)
-
-                Button("Submit") {
-                    enter = true
+                NavigationLink(destination:SignUpView()) {
+                    Text("Sign Up")
+                }//navlink closing
+                NavigationLink(destination:SignUpView()) {
+                    Text("Log In")
                 }
-                
-                if enter == true {
-                    NavigationLink(destination:SignUpView()) {
-                        Text("Get Started")
-                    } //navlink closing
-                } // if statement closing
             } //vstack closing
         } //navstack closing
     } //closing bracket
