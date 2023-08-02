@@ -10,20 +10,28 @@ import SwiftUI
 struct ContentView: View {
     @State private var username = ""
     @State private var password = ""
-    @State private var enter = false
+    @State private var signUpOpen = false
+    @State private var loginOpen = false
     var body: some View {
         NavigationStack {
             VStack {
                 Text("Welcome to")
                 Text("Communico")
-                
                 Text("Login or Sign Up now")
-                NavigationLink(destination:SignUpView()) {
-                    Text("Sign Up")
-                }//navlink closing
-                NavigationLink(destination:SignUpView()) {
-                    Text("Log In")
-                }
+                HStack {
+                    Button("Sign up") {
+                        self.signUpOpen = true
+                    } //signup button closing
+                    Button("Log In") {
+                        self.loginOpen = true
+                    } //login button closing
+                } //hstack closing
+                if signUpOpen {
+                    SignUpView()
+                        } //if statement closing
+                if loginOpen {
+                    LogInView()
+                } //ifstatement closing
             } //vstack closing
         } //navstack closing
     } //closing bracket
