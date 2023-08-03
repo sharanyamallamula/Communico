@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BD10515C2A7BE81100FBD5AC /* Communico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD10515A2A7BE81100FBD5AC /* Communico.xcdatamodeld */; };
+		BD6E64D82A7BFFC8009B5D0F /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E64D72A7BFFC8009B5D0F /* Persistance.swift */; };
 		BD8A1F222A79907E008C50D2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A1F212A79907E008C50D2 /* SignUpView.swift */; };
 		BD8E91002A7BF7A5009AAA26 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */; };
 		BD8E91022A7BF822009AAA26 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E91012A7BF822009AAA26 /* SecondView.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		BD10515B2A7BE81100FBD5AC /* Communico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Communico.xcdatamodel; sourceTree = "<group>"; };
+		BD6E64D72A7BFFC8009B5D0F /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		BD8A1F212A79907E008C50D2 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		BD8E91012A7BF822009AAA26 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
@@ -68,11 +70,12 @@
 			children = (
 				BD94151F2A798E1100EE1BBF /* Info.plist */,
 				BD94150F2A795E4C00EE1BBF /* CommunicoApp.swift */,
-				BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */,
+				BD6E64D72A7BFFC8009B5D0F /* Persistance.swift */,
 				BD8E91012A7BF822009AAA26 /* SecondView.swift */,
 				BDEF5C872A7BF54800869425 /* CoreDataManager.swift */,
 				BD9415112A795E4C00EE1BBF /* ContentView.swift */,
 				BD8A1F212A79907E008C50D2 /* SignUpView.swift */,
+				BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */,
 				BDD00A0C2A7AB64600097332 /* LogInView.swift */,
 				BD10515A2A7BE81100FBD5AC /* Communico.xcdatamodeld */,
 				BD94151D2A7963A300EE1BBF /* Comfortaa */,
@@ -166,6 +169,7 @@
 				BD8E91022A7BF822009AAA26 /* SecondView.swift in Sources */,
 				BDD00A0D2A7AB64600097332 /* LogInView.swift in Sources */,
 				BD10515C2A7BE81100FBD5AC /* Communico.xcdatamodeld in Sources */,
+				BD6E64D82A7BFFC8009B5D0F /* Persistance.swift in Sources */,
 				BDEF5C882A7BF54800869425 /* CoreDataManager.swift in Sources */,
 				BD8E91002A7BF7A5009AAA26 /* MainPage.swift in Sources */,
 				BD9415102A795E4C00EE1BBF /* CommunicoApp.swift in Sources */,

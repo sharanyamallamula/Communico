@@ -11,6 +11,7 @@ struct SignUpView: View {
     @Environment(\.managedObjectContext) private var viewContext
     @State private var username: String = ""
     @State private var password: String = ""
+    @Binding var isSignedUp : Bool
 
     var body: some View {
         VStack {
@@ -45,6 +46,6 @@ struct SignUpView: View {
 //nothing under here is edited 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        SignUpView(isSignedUp: .constant(true))
     }
 }

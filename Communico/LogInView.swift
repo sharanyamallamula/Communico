@@ -16,23 +16,22 @@ struct LogInView: View {
     @State private var isLoggedIn = false
 
     var body: some View {
-        VStack {
-            TextField("Username", text: $username)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-
-            SecureField("Password", text: $password)
-                .textFieldStyle(RoundedBorderTextFieldStyle())
-                .padding()
-
-            Button("Log In", action: logIn)
-                .padding()
-
-            if isLoggedIn {
-                MainPage()
-            }
-        }
-        .padding()
+        NavigationStack {
+            VStack {
+                TextField("Username", text: $username)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                SecureField("Password", text: $password)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding()
+                
+                NavigationLink(destination: MainPage()) {
+                    Text("Continue")
+                }
+            } //vstack closing
+            .padding()
+        } //navstack closing
     }
 
     private func logIn() {
