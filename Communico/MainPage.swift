@@ -17,7 +17,6 @@ struct MainPage: View {
                 Text("Active Friends")
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
-                    .padding()
                     .font(.title)
                 HStack {
                     Image("Person1")
@@ -52,7 +51,7 @@ struct MainPage: View {
                     }
                     .multilineTextAlignment(.trailing)
                 } // closing 2nd hstack
-                VStack(spacing: 30.0) {
+                VStack() {
                     Button(action : {}) {
                         VStack {
                             Text("Love Island")
@@ -80,9 +79,9 @@ struct MainPage: View {
                                 in: 1...5 )
                         } // vstack closing
                     } // closing button
-                    .padding()
                     .tint(Color("darkerCustomColor"))
                     .buttonStyle(.borderedProminent)
+                    .padding(50)
                     Button(action : {}) {
                         VStack {
                             Text("Stranger Things")
@@ -94,18 +93,17 @@ struct MainPage: View {
                                 in: 1...5 )
                         } // vstack closing
                     } // closing button
-                    .padding()
                     .tint(Color("darkerCustomColor"))
                     .buttonStyle(.borderedProminent)
+                    .padding(.horizontal, 50)
                     
 
                     
                 } //vstack closing for buttons
                     
             } //closing vstack
-            .padding()
+            
             }//closing zstack
-            .padding()
                 
             }//closing bracket
     }//closing bracket
