@@ -8,24 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var showSignUp = false
+    @State var showSignUp = true
     var body: some View {
-        VStack {
-            Text("Welcome To")
-            Text("Communico")
-            
-            Button("Get Started") {
-                showSignUp = true
-            } //button closing
             
             if showSignUp {
                 LogInView()
             }
-        } //vstack closing
-        
+
     } //closing bracket
 } //closing bracket
 //nothing is edited under here
+struct CustomColor {
+    static let mainColor = Color("testingColor")
+    static let darkOne = Color("darkerCustomColor")
+}
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

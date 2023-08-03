@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BD10515C2A7BE81100FBD5AC /* Communico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD10515A2A7BE81100FBD5AC /* Communico.xcdatamodeld */; };
+		BD21BB942A7C33500044FAAD /* WatchingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21BB932A7C33500044FAAD /* WatchingItem.swift */; };
 		BD6E64D82A7BFFC8009B5D0F /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E64D72A7BFFC8009B5D0F /* Persistance.swift */; };
-		BD8A1F222A79907E008C50D2 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8A1F212A79907E008C50D2 /* SignUpView.swift */; };
 		BD8E91002A7BF7A5009AAA26 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */; };
 		BD8E91022A7BF822009AAA26 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E91012A7BF822009AAA26 /* SecondView.swift */; };
 		BD9415102A795E4C00EE1BBF /* CommunicoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD94150F2A795E4C00EE1BBF /* CommunicoApp.swift */; };
@@ -17,14 +17,16 @@
 		BD9415142A795E4D00EE1BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9415132A795E4D00EE1BBF /* Assets.xcassets */; };
 		BD9415172A795E4D00EE1BBF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD9415162A795E4D00EE1BBF /* Preview Assets.xcassets */; };
 		BD94151E2A7963A300EE1BBF /* Comfortaa in Resources */ = {isa = PBXBuildFile; fileRef = BD94151D2A7963A300EE1BBF /* Comfortaa */; };
+		BDB712702A7C26A600FD4F45 /* PFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7126F2A7C26A600FD4F45 /* PFP.swift */; };
+		BDB712722A7C26F400FD4F45 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB712712A7C26F400FD4F45 /* ImagePicker.swift */; };
 		BDD00A0D2A7AB64600097332 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD00A0C2A7AB64600097332 /* LogInView.swift */; };
 		BDEF5C882A7BF54800869425 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEF5C872A7BF54800869425 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BD10515B2A7BE81100FBD5AC /* Communico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Communico.xcdatamodel; sourceTree = "<group>"; };
+		BD21BB932A7C33500044FAAD /* WatchingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingItem.swift; sourceTree = "<group>"; };
 		BD6E64D72A7BFFC8009B5D0F /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
-		BD8A1F212A79907E008C50D2 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		BD8E91012A7BF822009AAA26 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		BD94150C2A795E4C00EE1BBF /* Communico.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Communico.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +36,8 @@
 		BD9415162A795E4D00EE1BBF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BD94151D2A7963A300EE1BBF /* Comfortaa */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Comfortaa; path = ../../../Downloads/Comfortaa; sourceTree = "<group>"; };
 		BD94151F2A798E1100EE1BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		BDB7126F2A7C26A600FD4F45 /* PFP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFP.swift; sourceTree = "<group>"; };
+		BDB712712A7C26F400FD4F45 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		BDD00A0C2A7AB64600097332 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		BDEF5C872A7BF54800869425 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -69,14 +73,16 @@
 			isa = PBXGroup;
 			children = (
 				BD94151F2A798E1100EE1BBF /* Info.plist */,
-				BD94150F2A795E4C00EE1BBF /* CommunicoApp.swift */,
 				BD6E64D72A7BFFC8009B5D0F /* Persistance.swift */,
-				BD8E91012A7BF822009AAA26 /* SecondView.swift */,
 				BDEF5C872A7BF54800869425 /* CoreDataManager.swift */,
+				BD94150F2A795E4C00EE1BBF /* CommunicoApp.swift */,
+				BD8E91012A7BF822009AAA26 /* SecondView.swift */,
 				BD9415112A795E4C00EE1BBF /* ContentView.swift */,
-				BD8A1F212A79907E008C50D2 /* SignUpView.swift */,
-				BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */,
 				BDD00A0C2A7AB64600097332 /* LogInView.swift */,
+				BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */,
+				BD21BB932A7C33500044FAAD /* WatchingItem.swift */,
+				BDB7126F2A7C26A600FD4F45 /* PFP.swift */,
+				BDB712712A7C26F400FD4F45 /* ImagePicker.swift */,
 				BD10515A2A7BE81100FBD5AC /* Communico.xcdatamodeld */,
 				BD94151D2A7963A300EE1BBF /* Comfortaa */,
 				BD9415132A795E4D00EE1BBF /* Assets.xcassets */,
@@ -165,11 +171,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD9415122A795E4C00EE1BBF /* ContentView.swift in Sources */,
-				BD8A1F222A79907E008C50D2 /* SignUpView.swift in Sources */,
 				BD8E91022A7BF822009AAA26 /* SecondView.swift in Sources */,
 				BDD00A0D2A7AB64600097332 /* LogInView.swift in Sources */,
+				BD21BB942A7C33500044FAAD /* WatchingItem.swift in Sources */,
 				BD10515C2A7BE81100FBD5AC /* Communico.xcdatamodeld in Sources */,
 				BD6E64D82A7BFFC8009B5D0F /* Persistance.swift in Sources */,
+				BDB712702A7C26A600FD4F45 /* PFP.swift in Sources */,
+				BDB712722A7C26F400FD4F45 /* ImagePicker.swift in Sources */,
 				BDEF5C882A7BF54800869425 /* CoreDataManager.swift in Sources */,
 				BD8E91002A7BF7A5009AAA26 /* MainPage.swift in Sources */,
 				BD9415102A795E4C00EE1BBF /* CommunicoApp.swift in Sources */,

@@ -11,12 +11,14 @@ struct MainPage: View {
     @State private var sliderValue: Double = .zero
     var body: some View {
         ZStack {
-            Image("Background")
-            VStack  {
+            
+            LinearGradient(gradient: Gradient(colors: [CustomColor.darkOne, CustomColor.mainColor, CustomColor.mainColor, CustomColor.darkOne]), startPoint: .top, endPoint: .bottom)
+            VStack {
                 Text("Active Friends")
                     .fontWeight(.bold)
                     .multilineTextAlignment(.leading)
                     .padding()
+                    .font(.title)
                 HStack {
                     Image("Person1")
                         .resizable()
@@ -48,6 +50,7 @@ struct MainPage: View {
                     Button("➕") {
                         /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
                     }
+                    .multilineTextAlignment(.trailing)
                 } // closing 2nd hstack
                 VStack(spacing: 30.0) {
                     Button(action : {}) {
@@ -60,9 +63,12 @@ struct MainPage: View {
                                 value: $sliderValue,
                                 in: 1...5 )
                         } // vstack closing
+                        .padding()
                     } // closing button
                     .padding()
-                    .background(Rectangle().foregroundColor(Color.red))
+                    .tint(Color("darkerCustomColor"))
+                    .buttonStyle(.borderedProminent)
+                    .padding(50)
                     Button(action : {}) {
                         VStack {
                             Text("Insecure")
@@ -75,7 +81,8 @@ struct MainPage: View {
                         } // vstack closing
                     } // closing button
                     .padding()
-                    .background(Rectangle().foregroundColor(Color.red))
+                    .tint(Color("darkerCustomColor"))
+                    .buttonStyle(.borderedProminent)
                     Button(action : {}) {
                         VStack {
                             Text("Stranger Things")
@@ -88,20 +95,12 @@ struct MainPage: View {
                         } // vstack closing
                     } // closing button
                     .padding()
-                    .background(Rectangle().foregroundColor(Color.red))
+                    .tint(Color("darkerCustomColor"))
+                    .buttonStyle(.borderedProminent)
+                    
+
+                    
                 } //vstack closing for buttons
-                
-                    .navigationTitle("Communico")
-                    .navigationBarTitleDisplayMode(.inline)
-                    .navigationBarHidden(true)
-                
-                    .toolbar{
-                        ToolbarItemGroup(placement: .status){
-                            NavigationLink(destination: SecondView()) {
-                                Text("About")
-                            }
-                        }//tool bar item group
-                    }//toolbar
                     
             } //closing vstack
             .padding()
