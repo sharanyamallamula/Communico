@@ -8,51 +8,43 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State var username = ""
-    @State var password = ""
-    @State private var passwordconf = ""
-    @Binding var signUpOpen : Bool
+    @Environment(\.managedObjectContext) private var viewContext
+    @State private var username: String = ""
+    @State private var password: String = ""
+
     var body: some View {
-        VStack{
-            Text("Sign Up for Communico!")
-                .padding(.top)
-            
+        VStack {
             TextField("Username", text: $username)
-                .textFieldStyle(.roundedBorder)
-                .font(.custom("Comfortaa", size : 15))
-                .controlSize(.mini)
-                .autocapitalization(.none)
-                .padding(.top)
-            TextField("Password", text: $password)
-                .textFieldStyle(.roundedBorder)
-                .font(.custom("Comfortaa", size : 15))
-                .controlSize(.mini)
-                .autocapitalization(.none)
-                .padding(.vertical)
-            TextField("Confirm Password", text: $passwordconf)
-                .textFieldStyle(.roundedBorder)
-                .font(.custom("Comfortaa", size : 15))
-                .controlSize(.mini)
-                .autocapitalization(.none)
-                .padding(.bottom)
-            if password == passwordconf {
-                Button("Join Now!") {
-                    self.signUpOpen = false
-                } //button closing
-                .buttonStyle(.borderedProminent)
-                .tint(Color(red: 0.592156862745098, green: 0.6627450980392157, blue: 0.48627450980392156))
-                .font(.title2)
-            
-            } //ifstatement closing
-            Spacer()
-        } //vstack closing
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            SecureField("Password", text: $password)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            Button("Sign Up", action: saveUser)
+                .padding()
+        }
         .padding()
-    } //closing bracket
-} //closing bracket
+    }
+
+    private func saveUser() {
+        let newUser = User(context: viewContext)
+        newUser.username = username
+        newUser.password = password
+
+        do {
+            try viewContext.save()
+        } catch {
+            // Handle the error here
+            print("Error saving user: \(error)")
+        }
+    }
+}
 
 //nothing under here is edited 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView(username : "", password: "", signUpOpen: .constant(true))
+        SignUpView()
     }
 }

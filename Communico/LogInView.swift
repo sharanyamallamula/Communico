@@ -6,48 +6,51 @@
 //
 
 import SwiftUI
+
 struct LogInView: View {
-    @State private var enteredUser = ""
-    @State private var enteredPass = ""
-    @Binding var username : String
-    @Binding var password : String
-    @Binding var loginOpen : Bool
+    @Environment(\.managedObjectContext) private var viewContext
+    @FetchRequest(entity: User.entity(), sortDescriptors: []) var users: FetchedResults<User>
+
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @State private var isLoggedIn = false
+
     var body: some View {
-        VStack{
-            Text("Sign Up for Communico!")
-                .padding(.top)
-            
-            TextField("Username", text: $enteredUser)
-                .textFieldStyle(.roundedBorder)
-                .font(.custom("Comfortaa", size : 15))
-                .controlSize(.mini)
-                .autocapitalization(.none)
-                .padding(.top)
-            TextField("Password", text: $enteredPass)
-                .textFieldStyle(.roundedBorder)
-                .font(.custom("Comfortaa", size : 15))
-                .controlSize(.mini)
-                .autocapitalization(.none)
-                .padding(.vertical)
-            
-            if (username == enteredUser) && (password == enteredPass) {
-                Button("Continue") {
-                    self.loginOpen = false
-                } //button closing
-                .buttonStyle(.borderedProminent)
-                .tint(Color(red: 0.592156862745098, green: 0.6627450980392157, blue: 0.48627450980392156))
-                .font(.title2)
-            
-            } //ifstatement closing
-            Spacer()
-        } //vstack closing
+        VStack {
+            TextField("Username", text: $username)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            SecureField("Password", text: $password)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            Button("Log In", action: logIn)
+                .padding()
+
+            if isLoggedIn {
+                MainPage()
+            }
+        }
         .padding()
-    } //closing bracket
-} //closing bracket
+    }
+
+    private func logIn() {
+        for user in users {
+            if user.username == username && user.password == password {
+                isLoggedIn = true
+                return
+            }
+        }
+        // Show an alert or error message if login fails
+    }
+}
+
+
 
 // nothing is changed under here 
 struct LogInView_Previews: PreviewProvider {
     static var previews: some View {
-        LogInView(username : "", password : "", )
+        LogInView()
     }
 }
