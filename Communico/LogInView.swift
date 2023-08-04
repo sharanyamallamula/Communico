@@ -20,23 +20,35 @@ struct LogInView: View {
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [CustomColor.darkOne, CustomColor.mainColor, CustomColor.mainColor, CustomColor.darkOne]), startPoint: .top, endPoint: .bottom)
                     .edgesIgnoringSafeArea(.all)
-                VStack {
-                    Text("Welcome To")
-                    Text("Communico")
-                    
-                    Text("Log In Here")
-                    TextField("Username", text: $username)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                    
-                    SecureField("Password", text: $password)
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                    
-                    NavigationLink(destination: MainPage()) {
-                        Text("Continue")
-                    }
-                } //vstack closing
+                    VStack {
+                        Text("Welcome To")
+                            .font(.title)
+                            .fontWeight(.bold)
+                            .shadow(radius: 3)
+                            .foregroundColor(Color.white)
+                        Image("communico")
+                            .resizable(resizingMode: .stretch)
+                            .aspectRatio(contentMode: .fit)
+                        
+                        Text("")
+                        
+                        Text("Log In Here")
+                            .font(.title2)
+                            .fontWeight(.ultraLight)
+                        TextField("Username", text: $username)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding()
+                        
+                        SecureField("Password", text: $password)
+                            .textFieldStyle(RoundedBorderTextFieldStyle())
+                            .padding()
+                        
+                        NavigationLink(destination: MainPage()) {
+                            Text("Continue")
+                                .tint(Color.black)
+                        }
+                    } //vstack closing
+                
                 .padding()
             } //zstack closing
             .navigationTitle("Communico")
@@ -45,11 +57,17 @@ struct LogInView: View {
                                 
                 .toolbar{
                     ToolbarItemGroup(placement: .status){
-                        NavigationLink(destination: SecondView()) {
-                            Text("About")
+                        NavigationLink(destination: MainPage()) {
+                            Text("main")
+                                .tint(Color.black)
+                        }
+                        NavigationLink(destination : profile()) {
+                            Text("profile")
+                                .tint(Color.black)
                         }
                     }//tool bar item group
                 }//toolbar
+                
         } //navstack closing
     }
 

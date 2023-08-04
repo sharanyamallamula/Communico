@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BD10515C2A7BE81100FBD5AC /* Communico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BD10515A2A7BE81100FBD5AC /* Communico.xcdatamodeld */; };
 		BD21BB942A7C33500044FAAD /* WatchingItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21BB932A7C33500044FAAD /* WatchingItem.swift */; };
+		BD21BB962A7D29F50044FAAD /* CreatingWatching.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD21BB952A7D29F50044FAAD /* CreatingWatching.swift */; };
 		BD6E64D82A7BFFC8009B5D0F /* Persistance.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD6E64D72A7BFFC8009B5D0F /* Persistance.swift */; };
 		BD8E91002A7BF7A5009AAA26 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */; };
 		BD8E91022A7BF822009AAA26 /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD8E91012A7BF822009AAA26 /* SecondView.swift */; };
@@ -19,6 +20,7 @@
 		BD94151E2A7963A300EE1BBF /* Comfortaa in Resources */ = {isa = PBXBuildFile; fileRef = BD94151D2A7963A300EE1BBF /* Comfortaa */; };
 		BDB712702A7C26A600FD4F45 /* PFP.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB7126F2A7C26A600FD4F45 /* PFP.swift */; };
 		BDB712722A7C26F400FD4F45 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDB712712A7C26F400FD4F45 /* ImagePicker.swift */; };
+		BDBE1B7D2A7D2E720034E82B /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDBE1B7C2A7D2E720034E82B /* profile.swift */; };
 		BDD00A0D2A7AB64600097332 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDD00A0C2A7AB64600097332 /* LogInView.swift */; };
 		BDEF5C882A7BF54800869425 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEF5C872A7BF54800869425 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +28,7 @@
 /* Begin PBXFileReference section */
 		BD10515B2A7BE81100FBD5AC /* Communico.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Communico.xcdatamodel; sourceTree = "<group>"; };
 		BD21BB932A7C33500044FAAD /* WatchingItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchingItem.swift; sourceTree = "<group>"; };
+		BD21BB952A7D29F50044FAAD /* CreatingWatching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatingWatching.swift; sourceTree = "<group>"; };
 		BD6E64D72A7BFFC8009B5D0F /* Persistance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistance.swift; sourceTree = "<group>"; };
 		BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 		BD8E91012A7BF822009AAA26 /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
@@ -38,6 +41,7 @@
 		BD94151F2A798E1100EE1BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		BDB7126F2A7C26A600FD4F45 /* PFP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PFP.swift; sourceTree = "<group>"; };
 		BDB712712A7C26F400FD4F45 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		BDBE1B7C2A7D2E720034E82B /* profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 		BDD00A0C2A7AB64600097332 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		BDEF5C872A7BF54800869425 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,9 +84,11 @@
 				BD9415112A795E4C00EE1BBF /* ContentView.swift */,
 				BDD00A0C2A7AB64600097332 /* LogInView.swift */,
 				BD8E90FF2A7BF7A5009AAA26 /* MainPage.swift */,
+				BD21BB952A7D29F50044FAAD /* CreatingWatching.swift */,
 				BD21BB932A7C33500044FAAD /* WatchingItem.swift */,
 				BDB7126F2A7C26A600FD4F45 /* PFP.swift */,
 				BDB712712A7C26F400FD4F45 /* ImagePicker.swift */,
+				BDBE1B7C2A7D2E720034E82B /* profile.swift */,
 				BD10515A2A7BE81100FBD5AC /* Communico.xcdatamodeld */,
 				BD94151D2A7963A300EE1BBF /* Comfortaa */,
 				BD9415132A795E4D00EE1BBF /* Assets.xcassets */,
@@ -179,8 +185,10 @@
 				BDB712702A7C26A600FD4F45 /* PFP.swift in Sources */,
 				BDB712722A7C26F400FD4F45 /* ImagePicker.swift in Sources */,
 				BDEF5C882A7BF54800869425 /* CoreDataManager.swift in Sources */,
+				BDBE1B7D2A7D2E720034E82B /* profile.swift in Sources */,
 				BD8E91002A7BF7A5009AAA26 /* MainPage.swift in Sources */,
 				BD9415102A795E4C00EE1BBF /* CommunicoApp.swift in Sources */,
+				BD21BB962A7D29F50044FAAD /* CreatingWatching.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
